@@ -39,6 +39,16 @@
                     <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Status:</strong>
+                    <select class="form-select" name="status" aria-label="Default select example">
+                        <option selected>== Pilih Satu ==</option>
+                        <option value="Publish">Publish</option>
+                        <option value="Draft">Draft</option>
+                      </select>
+                </div>
+            </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
