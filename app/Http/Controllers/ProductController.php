@@ -41,6 +41,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'detail' => 'required',
+            'status' => 'required',
         ]);
       
         Product::create($request->all());
@@ -83,6 +84,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'detail' => 'required',
+            'status' => 'required'
         ]);
       
         $product->update($request->all());
