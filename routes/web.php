@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,7 @@ Route::controller(UserController::class)->group(function(){
     Route::get('users', 'index');
     Route::get('users-export', 'export')->name('users.export');
     Route::post('users-import', 'import')->name('users.import');
+    Route::get('generate-pdf', [PDFController::class, 'generatePDF']);
 });
+
+Route::get('generate-pdf', [PDFController::class, 'generatePDF']);
